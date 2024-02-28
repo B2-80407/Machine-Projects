@@ -31,14 +31,30 @@
         }
 
         button {
-            background-color: #28a745; /* Set background color for the button */
-            color: #fff; /* Set text color for the button */
+            background-color: #E7F6EA; /* Set background color for the button */
+            color: #505050; /* Set text color for the button */
             margin-top: 20px; /* Add margin from top for the button */
+            border: 5px solid #000000; /* Add border to the button with dark black color */
+            border-radius: 5px; /* Add border radius to the button */
+            padding: 10px 20px; /* Add padding to the button */
+            cursor: pointer; /* Add pointer cursor to the button */
+            transition: all 0.3s ease; /* Add transition for smooth hover effect */
         }
+
+        button:hover {
+             background-color: #28a745; /* Set background color for the button */
+            color: #; /* Set text color for the button */
+            margin-top: 20px; /* Add margin from top for the button */
+            border: 2px solid #000000; /* Add border to the button with dark black color */
+            border-radius: 5px; /* Add border radius to the button */
+            padding: 10px 20px; /* Add padding to the button */
+            cursor: pointer; /* Add pointer cursor to the button */
+            transition: all 0.3s ease; /* Add transition for smooth hover effect */
+     }
     </style>
 </head>
 
-<body style="background-color: #87CEEB;">
+<body style="background-color: #DAB9FA;">
     <div class="container">
         <h1>Welcome to Insurance Premium Prediction</h1>
         <h2>Enter your Personal Data here : </h2>
@@ -54,14 +70,14 @@
 
             <div class="row">
                 <div class="col">
-                    <div>Age of a person ? <input class="form-control" name="Age_of_person"  type="number" min=18 max=60 value="1">
+                    <div>Age of a person ? <input class="form-control" name="Age_of_person"  type="number" min=18 max=60 value="18">
                     </div>
 
-                    <div>BMI of a person ? <input class="form-control" name="BMI_of_person" type="number" min=15 max=50 value="0">
+                    <div>BMI of a person ? <input class="form-control" name="BMI_of_person" type="number" min=15 max=50 value="22">
                     </div>
 
                     <div>Blood pressure of a person ? <input class="form-control" name="Bloodpressure_of_person"
-                            type="number" min=70 max=150 value="0"></div>
+                            type="number" min=70 max=150 value="99"></div>
                     <div>No of children: <input class="form-control" name="No_of_childrens" type="number" min=0 max=10 value="0">
                     </div>
 
@@ -96,7 +112,7 @@
                 </select>
             </div>
 
-            <button class="btn btn-success">Predict</button>
+            <button class="btn btn-home"> PREDICT</button>
         </form>
 
     </div>
